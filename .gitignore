@@ -1,0 +1,8 @@
+/.vscode
+/.cache
+/build/
+/components/.DS_Store
+/main/.DS_Store
+sdkconfig.old
+.DS_Store
+/managed_components
