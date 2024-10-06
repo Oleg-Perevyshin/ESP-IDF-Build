@@ -5,14 +5,17 @@ on:
 
 jobs:
   build:
+
     runs-on: ubuntu-latest
 
     steps:
     - name: Checkout repo
       uses: actions/checkout@v4
+      with:
+        submodules: 'recursive'
 
     - name: Build with ESP-IDF
-      uses: kaspernyhus/esp-idf-ci-action@v1
+      uses: espressif/esp-idf-ci-action@v1
       with:
-        esp_idf_version: v5.3.1
+        esp_idf_version: latest
         target: esp32
